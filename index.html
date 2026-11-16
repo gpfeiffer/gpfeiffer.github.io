@@ -1,23 +1,210 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="home">
+    <title>Götz Pfeiffer</title>
 
-  <h1 class="page-heading">Notes</h1>
+    <style>
+        :root {
+            --background: #ffffff;
+            --text: #30343b;
+            --muted: #68717d;
+            --accent: #315b7d;
+            --border: #e5e8eb;
+            --content-width: 900px;
+        }
 
-  <ul class="post-list">
-    {% for post in site.posts reversed %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        * {
+            box-sizing: border-box;
+        }
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 17px;
+            line-height: 1.7;
+        }
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        header {
+            padding: 65px 0 35px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: normal;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        nav {
+            margin-top: 30px;
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+            font-family: Arial, sans-serif;
+            font-size: 0.9rem;
+        }
+
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 45px 0 70px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            font-weight: normal;
+            color: var(--accent);
+        }
+
+        p {
+            margin: 0 0 15px;
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        .links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .links li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            padding: 22px 0 35px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-family: Arial, sans-serif;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding-top: 40px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                gap: 16px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Götz Pfeiffer</h1>
+
+        <div class="subtitle">
+            Mathematics
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Welcome</h2>
+
+            <p>
+                Welcome to my homepage.
+            </p>
+
+            <p>
+                I am a mathematician at the University of Galway.
+                My research interests include algebra, representation
+                theory and combinatorics.
+            </p>
+        </section>
+
+        <section>
+            <h2>Research</h2>
+
+            <p>
+                Information about my research interests,
+                current projects and mathematical activities.
+            </p>
+        </section>
+
+        <section>
+            <h2>Publications</h2>
+
+            <p>
+                A list of my publications, with links to
+                published papers, preprints and other resources.
+            </p>
+
+            <p>
+                <a href="publications.html">Browse publications →</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Other information</h2>
+
+            <ul class="links">
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="https://github.com/gpfeiffer">GitHub</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        © Götz Pfeiffer
+    </footer>
 
 </div>
+
+</body>
+</html>
