@@ -53,6 +53,51 @@
     nav a { text-decoration: none; }
     nav a:hover, main a:hover { text-decoration: underline; }
     main { padding: 34px 0 65px; }
+    .self-author {
+      color: var(--text);
+      font-weight: bold;
+    }
+    .publication-title {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .publication-title:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    .publication-search {
+      margin: 0 0 28px;
+      padding: 18px 20px;
+      background: #f7f8f9;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+    }
+    .publication-search label {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--text);
+      font-size: .9rem;
+      font-weight: 600;
+    }
+    .publication-search input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #cbd1d7;
+      border-radius: 3px;
+      background: white;
+      color: var(--text);
+      font: 1rem Arial, sans-serif;
+    }
+    .publication-search input:focus {
+      outline: 2px solid #9bb6ca;
+      outline-offset: 1px;
+    }
+    .search-status {
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: .82rem;
+    }
     main > p {
       margin: 30px 0 12px;
       padding-bottom: 5px;
@@ -100,187 +145,239 @@
     </nav>
   </header>
   <main>
+    <div class="publication-search">
+      <label for="publication-query">Search publications</label>
+      <input id="publication-query" type="search"
+             placeholder="Search by title, co-author, journal, year, DOI, arXiv…"
+             autocomplete="off">
+      <div id="search-status" class="search-status" aria-live="polite"></div>
+    </div>
 <p><span><strong>Book.</strong></span></p>
 <ol>
-<li><p>(with Meinolf Geck)<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Meinolf Geck)<br />
 <em>Characters of Finite Coxeter Groups and Iwahori–Hecke Algebras</em>.<br />
 London Mathematical Society Monographs, New Series <span><strong>21</strong></span>. Oxford University Press, 2000. xvi+446 pp. ISBN: 0-19-850250-8.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1778802">1778802</a> (2002k:20017). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=0996.20004">0996.20004</a>.</p></li>
 </ol>
 <p><span><strong>Articles.</strong></span></p>
 <ol>
-<li><p>(with J. Matthew Douglass and Gerhard Röhrle)<br />
-<span>Parabolic Normalizers in Finite Coxeter Groups as Subdirect Products.</span><br />
-25 pages. To appear in <em>J. Group Theory</em>. doi:<a href="https://dx.doi.org/10.1515/jgth-2025-0155">10.1515/jgth-2025-0155</a>.<br />
-Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=08251036">08251036</a>. OWP <a href="https://dx.doi.org/10.14760/OWP-2025-10">2025-10</a>. arXiv:<a href="http://arxiv.org/abs/2509.15850">2509.15850</a>.</p></li>
-<li><p>(with Koushik Paul)<br />
-<span>Computing Young’s Natural Representations for Generalized Symmetric Groups</span>.<br />
-<em>J. Algebra</em> <strong>703</strong> (2026), 279–303. doi:<a href="https://dx.doi.org/10.1016/j.jalgebra.2025.10.019">10.1016/j.jalgebra.2025.10.019</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with J. Matthew Douglass and Gerhard Röhrle)<br />
+<a class="publication-title" href="https://doi.org/10.1515/jgth-2025-0155"><span>Parabolic Normalizers in Finite Coxeter Groups as Subdirect Products.</span></a><br />
+25 pages. To appear in <em>J. Group Theory</em>. doi:<a href="http://dx.doi.org/10.1515/jgth-2025-0155">10.1515/jgth-2025-0155</a>.<br />
+Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=08251036">08251036</a>. OWP <a href="http://dx.doi.org/10.14760/OWP-2025-10">2025-10</a>. arXiv:<a href="http://arxiv.org/abs/2509.15850">2509.15850</a>.</p></li>
+<li><p><span class="self-author">G. Pfeiffer</span> (with Koushik Paul)<br />
+<a class="publication-title" href="https://doi.org/10.1016/j.jalgebra.2025.10.019"><span>Computing Young’s Natural Representations for Generalized Symmetric Groups</span>.</a><br />
+<em>J. Algebra</em> <strong>703</strong> (2026), 279–303. doi:<a href="http://dx.doi.org/10.1016/j.jalgebra.2025.10.019">10.1016/j.jalgebra.2025.10.019</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=5080951">5080951</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=08222131">08222131</a>. arXiv:<a href="http://arxiv.org/abs/2412.11223">2412.11223</a>.</p></li>
-<li><p>(with J. Matthew Douglass and Gerhard Röhrle)<br />
-<span>Invariants and Semi-Invariants in the Cohomology of the Complement of a Reflection Arrangement</span>.<br />
-<em>Math. Ann.</em> <strong>392</strong> (2025), 2803–2851. doi:<a href="https://dx.doi.org/10.1007/s00208-024-03044-y">10.1007/s00208-024-03044-y</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with J. Matthew Douglass and Gerhard Röhrle)<br />
+<a class="publication-title" href="https://doi.org/10.1007/s00208-024-03044-y"><span>Invariants and Semi-Invariants in the Cohomology of the Complement of a Reflection Arrangement</span>.</a><br />
+<em>Math. Ann.</em> <strong>392</strong> (2025), 2803–2851. doi:<a href="http://dx.doi.org/10.1007/s00208-024-03044-y">10.1007/s00208-024-03044-y</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=4906334">4906334</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1580.20048">1580.20048</a>. arXiv:<a href="http://arxiv.org/abs/2009.12847">2009.12847</a>.</p></li>
-<li><p>(with E. Chavli)<br />
-<span>Centers of Hecke Algebras of Complex Reflection Groups</span>.<br />
-<em>Beitr. Algebra Geom.</em> <strong>65</strong> (2024), no. 2, 319–336. doi:<a href="https://dx.doi.org/10.1007/s13366-023-00690-2">10.1007/s13366-023-00690-2</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with E. Chavli)<br />
+<a class="publication-title" href="https://doi.org/10.1007/s13366-023-00690-2"><span>Centers of Hecke Algebras of Complex Reflection Groups</span>.</a><br />
+<em>Beitr. Algebra Geom.</em> <strong>65</strong> (2024), no. 2, 319–336. doi:<a href="http://dx.doi.org/10.1007/s13366-023-00690-2">10.1007/s13366-023-00690-2</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=4740672">4740672</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1546.20002">1546.20002</a>. arXiv:<a href="http://arxiv.org/abs/2112.10853">2112.10853</a></p></li>
-<li><p>(with L. Hellebrandt)<br />
-<span>On the Left Connected Subalgebra of the Descent Algebra of a Coxeter Group of Classical Type</span>.<br />
-<em>Ann. Comb.</em> <strong>27</strong> (2023), no. 3, 693–706. doi:<a href="https://dx.doi.org/10.1007/s00026-022-00589-0">10.1007/s00026-022-00589-0</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with L. Hellebrandt)<br />
+<a class="publication-title" href="https://doi.org/10.1007/s00026-022-00589-0"><span>On the Left Connected Subalgebra of the Descent Algebra of a Coxeter Group of Classical Type</span>.</a><br />
+<em>Ann. Comb.</em> <strong>27</strong> (2023), no. 3, 693–706. doi:<a href="http://dx.doi.org/10.1007/s00026-022-00589-0">10.1007/s00026-022-00589-0</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=4633761">4633761</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1526.20056">1526.20056</a>. arXiv:<a href="http://arxiv.org/abs/2109.01473">2109.01473</a></p></li>
-<li><p>(with John M. Burns)<br />
-<span>Maximal Order Abelian Subgroups of Coxeter Groups</span>.<br />
-<em>Glasg. Math. J.</em> <strong>65</strong> (2023), Issue 1, 114–120. doi:<a href="https://dx.doi.org/10.1017/S0017089522000143">10.1017/S0017089522000143</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with John M. Burns)<br />
+<a class="publication-title" href="https://doi.org/10.1017/S0017089522000143"><span>Maximal Order Abelian Subgroups of Coxeter Groups</span>.</a><br />
+<em>Glasg. Math. J.</em> <strong>65</strong> (2023), Issue 1, 114–120. doi:<a href="http://dx.doi.org/10.1017/S0017089522000143">10.1017/S0017089522000143</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=4518765">4518765</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1516.20080">1516.20080</a>. arXiv:<a href="http://arxiv.org/abs/1601.07812">1601.07812</a>.</p></li>
-<li><p>(with J. Matthew Douglass and Gerhard Röhrle)<br />
-<span>On the Invariants of the Cohomology of Complements of Coxeter arrangements</span>.<br />
-<em>J. Algebra</em> <strong>558</strong> (2020) 336–349. doi:<a href="https://dx.doi.org/10.1016/j.jalgebra.2019.05.010">10.1016/j.jalgebra.2019.05.010</a>.<br />
-MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=4102118">4102118</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1455.20003">1455.20003</a>. OWP <a href="https://dx.doi.org/10.14760/OWP-2018-21">2018-21</a>. arXiv:<a href="http://arxiv.org/abs/1810.02563">1810.02563</a>.</p></li>
-<li><p>(with Hery Randriamaro)<br />
-<span>The Varchenko Determinant of a Coxeter Arrangement</span>.<br />
-<em>J. Group Theory</em> <strong>21</strong> (2018), 651–665. doi:<a href="https://dx.doi.org/10.1515/jgth-2018-0009">10.1515/jgth-2018-0009</a>.<br />
-MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3819545">3819545</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1403.20054">1403.20054</a>. OWP <a href="https://dx.doi.org/10.14760/OWP-2017-33">2017-33</a>. arXiv:<a href="http://arxiv.org/abs/1711.01146">1711.01146</a>.</p></li>
-<li><p>(with Brendan Masterson)<br />
-<span>On the Table of Marks of a Direct Product of Finite Groups</span>.<br />
-<em>J. Algebra</em> <strong>499</strong> (2018), 610–644. doi:<a href="https://dx.doi.org/10.1016/j.jalgebra.2017.12.019">10.1016/j.jalgebra.2017.12.019</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with J. Matthew Douglass and Gerhard Röhrle)<br />
+<a class="publication-title" href="https://doi.org/10.1016/j.jalgebra.2019.05.010"><span>On the Invariants of the Cohomology of Complements of Coxeter arrangements</span>.</a><br />
+<em>J. Algebra</em> <strong>558</strong> (2020) 336–349. doi:<a href="http://dx.doi.org/10.1016/j.jalgebra.2019.05.010">10.1016/j.jalgebra.2019.05.010</a>.<br />
+MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=4102118">4102118</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1455.20003">1455.20003</a>. OWP <a href="http://dx.doi.org/10.14760/OWP-2018-21">2018-21</a>. arXiv:<a href="http://arxiv.org/abs/1810.02563">1810.02563</a>.</p></li>
+<li><p><span class="self-author">G. Pfeiffer</span> (with Hery Randriamaro)<br />
+<a class="publication-title" href="https://doi.org/10.1515/jgth-2018-0009"><span>The Varchenko Determinant of a Coxeter Arrangement</span>.</a><br />
+<em>J. Group Theory</em> <strong>21</strong> (2018), 651–665. doi:<a href="http://dx.doi.org/10.1515/jgth-2018-0009">10.1515/jgth-2018-0009</a>.<br />
+MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3819545">3819545</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1403.20054">1403.20054</a>. OWP <a href="http://dx.doi.org/10.14760/OWP-2017-33">2017-33</a>. arXiv:<a href="http://arxiv.org/abs/1711.01146">1711.01146</a>.</p></li>
+<li><p><span class="self-author">G. Pfeiffer</span> (with Brendan Masterson)<br />
+<a class="publication-title" href="https://doi.org/10.1016/j.jalgebra.2017.12.019"><span>On the Table of Marks of a Direct Product of Finite Groups</span>.</a><br />
+<em>J. Algebra</em> <strong>499</strong> (2018), 610–644. doi:<a href="http://dx.doi.org/10.1016/j.jalgebra.2017.12.019">10.1016/j.jalgebra.2017.12.019</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3758519">3758519</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1415.20007">1415.20007</a>. arXiv:<a href="http://arxiv.org/abs/1704.03433">1704.03433</a>.</p></li>
-<li><p>(with Alice C. Niemeyer and Cheryl E. Praeger)<br />
-<span>On the Complexity of Multiplication in the Iwahori–Hecke Algebra of the Symmetric Group</span>.<br />
-<em>J. Symb. Comp.</em> <strong>80</strong> (2017), part 3, 817–832. doi:<a href="https://dx.doi.org/10.1016/j.jsc.2016.09.001">10.1016/j.jsc.2016.09.001</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Alice C. Niemeyer and Cheryl E. Praeger)<br />
+<a class="publication-title" href="https://doi.org/10.1016/j.jsc.2016.09.001"><span>On the Complexity of Multiplication in the Iwahori–Hecke Algebra of the Symmetric Group</span>.</a><br />
+<em>J. Symb. Comp.</em> <strong>80</strong> (2017), part 3, 817–832. doi:<a href="http://dx.doi.org/10.1016/j.jsc.2016.09.001">10.1016/j.jsc.2016.09.001</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3574535">3574535</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1486.68258">1486.68258</a>. arXiv:<a href="http://arxiv.org/abs/1512.05319">1512.05319</a>.</p></li>
-<li><p>(with Ivan Marin)<br />
-<span>The BMR Freeness Conjecture for the 2-Reflection Groups</span>.<br />
-<em>Math. Comp.</em> <strong>86</strong> (2017), no. 306, 2005–2023. doi:<a href="https://dx.doi.org/10.1090/mcom/3142">10.1090/mcom/3142</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Ivan Marin)<br />
+<a class="publication-title" href="https://doi.org/10.1090/mcom/3142"><span>The BMR Freeness Conjecture for the 2-Reflection Groups</span>.</a><br />
+<em>Math. Comp.</em> <strong>86</strong> (2017), no. 306, 2005–2023. doi:<a href="http://dx.doi.org/10.1090/mcom/3142">10.1090/mcom/3142</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3626546">3626546</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1419.20003">1419.20003</a>. arXiv:<a href="http://arxiv.org/abs/1411.4760">1411.4760</a>.</p></li>
-<li><p>(with Marcus Bishop, J. Matthew Douglass and Gerhard Röhrle)<br />
-Computations for Coxeter arrangements and Solomon’s descent algebra III: Groups of rank seven and eight.<br />
-<em>J. Algebra</em> <strong>423</strong> (2015), 1213–1232. doi:<a href="https://dx.doi.org/10.1016/j.jalgebra.2014.10.025">10.1016/j.jalgebra.2014.10.025</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Marcus Bishop, J. Matthew Douglass and Gerhard Röhrle)<br />
+<a class="publication-title" href="https://doi.org/10.1016/j.jalgebra.2014.10.025">Computations for Coxeter arrangements and Solomon’s descent algebra III: Groups of rank seven and eight.</a><br />
+<em>J. Algebra</em> <strong>423</strong> (2015), 1213–1232. doi:<a href="http://dx.doi.org/10.1016/j.jalgebra.2014.10.025">10.1016/j.jalgebra.2014.10.025</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3283755">3283755</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1306.20004">1306.20004</a>. arXiv:<a href="http://arxiv.org/abs/1403.6227">1403.6227</a>.</p></li>
-<li><p>(with J. Matthew Douglass and Gerhard Röhrle)<br />
-<span>Cohomology of Coxeter Arrangements and Solomon’s Descent Algebra</span>.<br />
-<em>Trans. Amer. Math. Soc.</em> <strong>366</strong> (2014), no. 10, 5379–5407. doi:<a href="https://dx.doi.org/10.1090/S0002-9947-2014-06060-1">10.1090/S0002-9947-2014-06060-1</a>.<br />
-MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3240927">3240927</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1343.20005">1343.20005</a>. OWP <a href="https://dx.doi.org/10.14760/OWP-2011-03">2011-03</a>. arXiv:<a href="http://arxiv.org/abs/1101.2075">1101.2075</a>.</p></li>
-<li><p>(with J. Matthew Douglass and Gerhard Röhrle)<br />
-<span>On Reflection Subgroups of Finite Coxeter Groups</span>.<br />
-<em>Comm. Algebra</em> <strong>41</strong> (2013), no. 7, 2574–2592. doi:<a href="https://dx.doi.org/10.1080/00927872.2012.661005">10.1080/00927872.2012.661005</a>.<br />
-MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3169410">3169410</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1282.20040">1282.20040</a>. OWP <a href="https://dx.doi.org/10.14760/OWP-2011-06">2011-06</a>. arXiv:<a href="http://arxiv.org/abs/1101.5893">1101.5893</a>.</p></li>
-<li><p>(with Liam Naughton)<br />
-Integer Sequences Realized by the Subgroup Pattern of the Symmetric Group.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with J. Matthew Douglass and Gerhard Röhrle)<br />
+<a class="publication-title" href="https://doi.org/10.1090/S0002-9947-2014-06060-1"><span>Cohomology of Coxeter Arrangements and Solomon’s Descent Algebra</span>.</a><br />
+<em>Trans. Amer. Math. Soc.</em> <strong>366</strong> (2014), no. 10, 5379–5407. doi:<a href="http://dx.doi.org/10.1090/S0002-9947-2014-06060-1">10.1090/S0002-9947-2014-06060-1</a>.<br />
+MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3240927">3240927</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1343.20005">1343.20005</a>. OWP <a href="http://dx.doi.org/10.14760/OWP-2011-03">2011-03</a>. arXiv:<a href="http://arxiv.org/abs/1101.2075">1101.2075</a>.</p></li>
+<li><p><span class="self-author">G. Pfeiffer</span> (with J. Matthew Douglass and Gerhard Röhrle)<br />
+<a class="publication-title" href="https://doi.org/10.1080/00927872.2012.661005"><span>On Reflection Subgroups of Finite Coxeter Groups</span>.</a><br />
+<em>Comm. Algebra</em> <strong>41</strong> (2013), no. 7, 2574–2592. doi:<a href="http://dx.doi.org/10.1080/00927872.2012.661005">10.1080/00927872.2012.661005</a>.<br />
+MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3169410">3169410</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1282.20040">1282.20040</a>. OWP <a href="http://dx.doi.org/10.14760/OWP-2011-06">2011-06</a>. arXiv:<a href="http://arxiv.org/abs/1101.5893">1101.5893</a>.</p></li>
+<li><p><span class="self-author">G. Pfeiffer</span> (with Liam Naughton)<br />
+<a class="publication-title" href="https://arxiv.org/abs/1211.1911">Integer Sequences Realized by the Subgroup Pattern of the Symmetric Group.</a><br />
 <em>J. Integer Seq.</em> <strong>16</strong> (2013), no. 5, Article <a href="https://cs.uwaterloo.ca/journals/JIS/VOL16/Naughton/naughton2.html">13.5.8</a>, 23 pages.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3065337">3065337</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1288.20002">1288.20002</a>. arXiv:<a href="http://arxiv.org/abs/1211.1911">1211.1911</a>.</p></li>
-<li><p>(with Marcus Bishop)<br />
-On the Quiver Presentation of the Descent Algebra of the Symmetric Group.<br />
-<em>J. Algebra</em> <strong>383</strong> (2013), 212–231. doi:<a href="https://dx.doi.org/10.1016/j.jalgebra.2013.02.027">10.1016/j.jalgebra.2013.02.027</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Marcus Bishop)<br />
+<a class="publication-title" href="https://doi.org/10.1016/j.jalgebra.2013.02.027">On the Quiver Presentation of the Descent Algebra of the Symmetric Group.</a><br />
+<em>J. Algebra</em> <strong>383</strong> (2013), 212–231. doi:<a href="http://dx.doi.org/10.1016/j.jalgebra.2013.02.027">10.1016/j.jalgebra.2013.02.027</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3037976">3037976</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1291.20003">1291.20003</a>. arXiv:<a href="http://arxiv.org/abs/1206.0327">1206.0327</a>.</p></li>
-<li><p>(with Marcus Bishop, J. Matthew Douglass and Gerhard Röhrle)<br />
-<span>Computations for Coxeter arrangements and Solomon’s descent algebra II: Groups of rank five and six</span>.<br />
-<em>J. Algebra</em> <strong>377</strong> (2013), 320–332. doi:<a href="https://dx.doi.org/10.1016/j.jalgebra.2012.11.047">10.1016/j.jalgebra.2012.11.047</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Marcus Bishop, J. Matthew Douglass and Gerhard Röhrle)<br />
+<a class="publication-title" href="https://doi.org/10.1016/j.jalgebra.2012.11.047"><span>Computations for Coxeter arrangements and Solomon’s descent algebra II: Groups of rank five and six</span>.</a><br />
+<em>J. Algebra</em> <strong>377</strong> (2013), 320–332. doi:<a href="http://dx.doi.org/10.1016/j.jalgebra.2012.11.047">10.1016/j.jalgebra.2012.11.047</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3008911">3008911</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1277.20007">1277.20007</a>. arXiv:<a href="http://arxiv.org/abs/1201.4775">1201.4775</a>.</p></li>
-<li><p>(with Marcus Bishop, J. Matthew Douglass and Gerhard Röhrle)<br />
-<span>Computations for Coxeter arrangements and Solomon’s descent algebra: Groups of rank three and four</span>.<br />
-<em>J. Symbolic Comput.</em> <strong>50</strong> (2013), 139–158. doi:<a href="https://dx.doi.org/10.1016/j.jsc.2012.06.001">10.1016/j.jsc.2012.06.001</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Marcus Bishop, J. Matthew Douglass and Gerhard Röhrle)<br />
+<a class="publication-title" href="https://doi.org/10.1016/j.jsc.2012.06.001"><span>Computations for Coxeter arrangements and Solomon’s descent algebra: Groups of rank three and four</span>.</a><br />
+<em>J. Symbolic Comput.</em> <strong>50</strong> (2013), 139–158. doi:<a href="http://dx.doi.org/10.1016/j.jsc.2012.06.001">10.1016/j.jsc.2012.06.001</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2996872">2996872</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1257.20004">1257.20004</a>. arXiv:<a href="http://arxiv.org/abs/1110.0120">1110.0120</a>.</p></li>
-<li><p>(with Liam Naughton)<br />
-<span>Computing the Table of Marks of a Cyclic Extension</span>.<br />
-<em>Math. Comp.</em> <strong>81</strong> (2012), no. 280, 2419–2438. doi:<a href="https://dx.doi.org/10.1090/S0025-5718-2012-02600-7">10.1090/S0025-5718-2012-02600-7</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Liam Naughton)<br />
+<a class="publication-title" href="https://doi.org/10.1090/S0025-5718-2012-02600-7"><span>Computing the Table of Marks of a Cyclic Extension</span>.</a><br />
+<em>Math. Comp.</em> <strong>81</strong> (2012), no. 280, 2419–2438. doi:<a href="http://dx.doi.org/10.1090/S0025-5718-2012-02600-7">10.1090/S0025-5718-2012-02600-7</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2945164">2945164</a>. Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1282.20015">1282.20015</a>. arXiv:<a href="http://arxiv.org/abs/1105.4064">1105.4064</a>.</p></li>
-<li><p>(with J. Matthew Douglass and Gerhard Röhrle)<br />
-<span>An Inductive Approach to Coxeter Arrangements and Solomon’s Descent Algebra</span>.<br />
-<em>J. Algebraic Combin.</em> <strong>35</strong> (2012), no. 2, 215–235. doi:<a href="https://dx.doi.org/10.1007/s10801-011-0301-9">10.1007/s10801-011-0301-9</a>.<br />
-MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2886288">2886288</a> (2012m:05431). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1248.20006">1248.20006</a>. OWP <a href="https://dx.doi.org/10.14760/OWP-2011-16">2011-16</a>. arXiv:<a href="http://arxiv.org/abs/1104.0551">1104.0551</a>.</p></li>
-<li><p>(with Matjaž Konvalinka and Class Röver)<br />
-<span>A Note on Element Centralizers in Finite Coxeter Groups.</span><br />
-<em>J. Group Theory</em> <strong>14</strong> (2011), no. 5, 727–745. doi:<a href="https://dx.doi.org/10.1515/JGT.2010.074">10.1515/JGT.2010.074</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with J. Matthew Douglass and Gerhard Röhrle)<br />
+<a class="publication-title" href="https://doi.org/10.1007/s10801-011-0301-9"><span>An Inductive Approach to Coxeter Arrangements and Solomon’s Descent Algebra</span>.</a><br />
+<em>J. Algebraic Combin.</em> <strong>35</strong> (2012), no. 2, 215–235. doi:<a href="http://dx.doi.org/10.1007/s10801-011-0301-9">10.1007/s10801-011-0301-9</a>.<br />
+MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2886288">2886288</a> (2012m:05431). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1248.20006">1248.20006</a>. OWP <a href="http://dx.doi.org/10.14760/OWP-2011-16">2011-16</a>. arXiv:<a href="http://arxiv.org/abs/1104.0551">1104.0551</a>.</p></li>
+<li><p><span class="self-author">G. Pfeiffer</span> (with Matjaž Konvalinka and Class Röver)<br />
+<a class="publication-title" href="https://doi.org/10.1515/JGT.2010.074"><span>A Note on Element Centralizers in Finite Coxeter Groups.</span></a><br />
+<em>J. Group Theory</em> <strong>14</strong> (2011), no. 5, 727–745. doi:<a href="http://dx.doi.org/10.1515/JGT.2010.074">10.1515/JGT.2010.074</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2831968">2831968</a> (2012j:20125). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1245.20045">1245.20045</a>. arXiv:<a href="http://arxiv.org/abs/1005.1186">1005.1186</a>.</p></li>
-<li><p><span>A Quiver Presentation for Solomon’s Descent Algebra.</span><br />
-<em>Adv. Math.</em> <strong>220</strong> (2009), no. 5, 1428–1465. doi:<a href="https://dx.doi.org/10.1016/j.aim.2008.11.005">10.1016/j.aim.2008.11.005</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span><br />
+<a class="publication-title" href="https://doi.org/10.1016/j.aim.2008.11.005"><span>A Quiver Presentation for Solomon’s Descent Algebra.</span></a><br />
+<em>Adv. Math.</em> <strong>220</strong> (2009), no. 5, 1428–1465. doi:<a href="http://dx.doi.org/10.1016/j.aim.2008.11.005">10.1016/j.aim.2008.11.005</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2493617">2493617</a> (2010b:16028). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1203.20004">1203.20004</a>. arXiv:<a href="http://arxiv.org/abs/0709.3914">0709.3914</a>.</p></li>
-<li><p>(with C. Bonnafé)<br />
-<span>Around Solomon’s Descent Algebras.</span><br />
-<em>Algebr. Represent. Theory</em> <strong>11</strong> (2008), no. 6, 577–602. doi:<a href="https://dx.doi.org/10.1007/s10468-008-9090-9">10.1007/s10468-008-9090-9</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with C. Bonnafé)<br />
+<a class="publication-title" href="https://doi.org/10.1007/s10468-008-9090-9"><span>Around Solomon’s Descent Algebras.</span></a><br />
+<em>Algebr. Represent. Theory</em> <strong>11</strong> (2008), no. 6, 577–602. doi:<a href="http://dx.doi.org/10.1007/s10468-008-9090-9">10.1007/s10468-008-9090-9</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2453230">2453230</a> (2010d:20046). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1193.20046">1193.20046</a>. arXiv:<a href="http://arxiv.org/abs/math/0601317">math/0601317</a>.</p></li>
-<li><p>(with Robert Boltje)<br />
-<span>An algorithm for the unit group of the Burnside ring of a finite group</span>.<br />
-In: C. M. Campbell, M. R. Quick, E. F. Robertson and G. C. Smith (eds.), <em>Groups St Andrews 2005 Volume 1</em>, LMS Lecture Note Series 339, Cambridge University Press 2007, pp. 230–236. doi:<a href="https://dx.doi.org/10.1017/CBO9780511721212.015">10.1017/CBO9780511721212.015</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Robert Boltje)<br />
+<a class="publication-title" href="https://doi.org/10.1017/CBO9780511721212.015"><span>An algorithm for the unit group of the Burnside ring of a finite group</span>.</a><br />
+In: C. M. Campbell, M. R. Quick, E. F. Robertson and G. C. Smith (eds.), <em>Groups St Andrews 2005 Volume 1</em>, LMS Lecture Note Series 339, Cambridge University Press 2007, pp. 230–236. doi:<a href="http://dx.doi.org/10.1017/CBO9780511721212.015">10.1017/CBO9780511721212.015</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2328162">2328162</a> (2008k:19001). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1111.19001">1111.19001</a>. arXiv:<a href="http://arxiv.org/abs/0808.1232">0808.1232</a>.</p></li>
-<li><p>(with Gerhard Röhrle)<br />
-<span>Special Involutions and Bulky Parabolic Subgroups in Finite Coxeter Groups</span>.<br />
-<em>J. Aust. Math. Soc.</em> <strong>79</strong> (2005), no. 1, 141–147. doi:<a href="https://dx.doi.org/10.1017/S1446788700009381">10.1017/S1446788700009381</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Gerhard Röhrle)<br />
+<a class="publication-title" href="https://doi.org/10.1017/S1446788700009381"><span>Special Involutions and Bulky Parabolic Subgroups in Finite Coxeter Groups</span>.</a><br />
+<em>J. Aust. Math. Soc.</em> <strong>79</strong> (2005), no. 1, 141–147. doi:<a href="http://dx.doi.org/10.1017/S1446788700009381">10.1017/S1446788700009381</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2161180">2161180</a> (2006d:20068). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1078.20042">1078.20042</a>. arXiv:<a href="http://arxiv.org/abs/math/0406014">math/0406014</a>.</p></li>
-<li><p><span>Counting Transitive Relations</span>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span><br />
+<span>Counting Transitive Relations</span>.<br />
 <em>J. Integer Seq.</em> <strong>7</strong> (2004), no. 3, Article <a href="http://www.cs.uwaterloo.ca/journals/JIS/VOL7/Pfeiffer/pfeiffer6.html">04.3.2</a>, 11 pages.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2085342">2085342</a> (2005b:06008). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1071.06003">1071.06003</a>.</p></li>
-<li><p>(with Gerhard Röhrle)<br />
-<span>Distributive coset graphs of finite Coxeter groups</span>.<br />
-<em>J. Group Theory</em> <strong>6</strong> (2003), no. 3, 311–320. doi:<a href="https://dx.doi.org/10.1515/jgth.2003.021">10.1515/jgth.2003.021</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Gerhard Röhrle)<br />
+<a class="publication-title" href="https://doi.org/10.1515/jgth.2003.021"><span>Distributive coset graphs of finite Coxeter groups</span>.</a><br />
+<em>J. Group Theory</em> <strong>6</strong> (2003), no. 3, 311–320. doi:<a href="http://dx.doi.org/10.1515/jgth.2003.021">10.1515/jgth.2003.021</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1983369">1983369</a> (2004d:20043). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1062.20045">1062.20045</a>.</p></li>
-<li><p>(with M. D. Atkinson and S. v. Willigenburg)<br />
-<span>The <span class="math inline">\(p\)</span>-modular descent algebras</span>.<br />
-<em>Algebr. Represent. Theory</em> <strong>5</strong> (2002), no. 1, 101–113. doi:<a href="https://dx.doi.org/10.1023/A:1014413413572">10.1023/A:1014413413572</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with M. D. Atkinson and S. v. Willigenburg)<br />
+<a class="publication-title" href="https://doi.org/10.1023/A:1014413413572"><span>The <span class="math inline">\(p\)</span>-modular descent algebras</span>.</a><br />
+<em>Algebr. Represent. Theory</em> <strong>5</strong> (2002), no. 1, 101–113. doi:<a href="http://dx.doi.org/10.1023/A:1014413413572">10.1023/A:1014413413572</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1890595">1890595</a> (2003f:20058). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1087.20031">1087.20031</a>. arXiv:<a href="http://arxiv.org/abs/0706.2908">0706.2908</a>.</p></li>
-<li><p>(with S. A. Linton, E. F. Robertson, and N. Ruškuc)<br />
-<span>Computing Transformation Semigroups</span>.<br />
-<em>J. Symbolic Comput.</em> <strong>33</strong> (2002), no. 2, 145–162. doi:<a href="https://dx.doi.org/10.1006/jsco.2000.0406">10.1006/jsco.2000.0406</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with S. A. Linton, E. F. Robertson, and N. Ruškuc)<br />
+<a class="publication-title" href="https://doi.org/10.1006/jsco.2000.0406"><span>Computing Transformation Semigroups</span>.</a><br />
+<em>J. Symbolic Comput.</em> <strong>33</strong> (2002), no. 2, 145–162. doi:<a href="http://dx.doi.org/10.1006/jsco.2000.0406">10.1006/jsco.2000.0406</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1879378">1879378</a> (2002k:20112). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1002.20043">1002.20043</a>.</p></li>
-<li><p>(with Meinolf Geck and Sungsoon Kim)<br />
-<span>Minimal length elements in twisted conjugacy classes of finite Coxeter groups</span>.<br />
-<em>J. Algebra</em> <strong>229</strong> (2000), no. 2, 570–600. doi:<a href="https://dx.doi.org/10.1006/jabr.1999.8253">10.1006/jabr.1999.8253</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Meinolf Geck and Sungsoon Kim)<br />
+<a class="publication-title" href="https://doi.org/10.1006/jabr.1999.8253"><span>Minimal length elements in twisted conjugacy classes of finite Coxeter groups</span>.</a><br />
+<em>J. Algebra</em> <strong>229</strong> (2000), no. 2, 570–600. doi:<a href="http://dx.doi.org/10.1006/jabr.1999.8253">10.1006/jabr.1999.8253</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1769289">1769289</a> (2001h:20049). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=1042.20026">1042.20026</a>.</p></li>
-<li><p>(with Thomas Breuer)<br />
-<span>Finding Possible Permutation Characters</span>.<br />
-<em>J. Symbolic Comput.</em> <strong>26</strong> (1998), no. 3, 343–354. doi:<a href="https://dx.doi.org/10.1006/jsco.1998.0217">10.1006/jsco.1998.0217</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Thomas Breuer)<br />
+<a class="publication-title" href="https://doi.org/10.1006/jsco.1998.0217"><span>Finding Possible Permutation Characters</span>.</a><br />
+<em>J. Symbolic Comput.</em> <strong>26</strong> (1998), no. 3, 343–354. doi:<a href="http://dx.doi.org/10.1006/jsco.1998.0217">10.1006/jsco.1998.0217</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1633876">1633876</a> (99e:20005). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=0921.20013">0921.20013</a>.</p></li>
-<li><p>(with S. A. Linton, E. F. Robertson, and N. Ruškuc)<br />
-<span>Groups and Actions in Transformation Semigroups</span>.<br />
-<em>Math. Z.</em> <strong>228</strong> (1998), no. 3, 435–450. doi:<a href="https://dx.doi.org/10.1007/PL00004628">10.1007/PL00004628</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with S. A. Linton, E. F. Robertson, and N. Ruškuc)<br />
+<a class="publication-title" href="https://doi.org/10.1007/PL00004628"><span>Groups and Actions in Transformation Semigroups</span>.</a><br />
+<em>Math. Z.</em> <strong>228</strong> (1998), no. 3, 435–450. doi:<a href="http://dx.doi.org/10.1007/PL00004628">10.1007/PL00004628</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1637855">1637855</a> (99e:20078). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=0902.20028">0902.20028</a>.</p></li>
-<li><p><span>The Subgroups of <span class="math inline">\(M_{24}\)</span> or How to Compute the Table of Marks of a Finite Group</span>.<br />
-<em>Experiment. Math.</em> <strong>6</strong> (1997), no. 3, <a href="http://projecteuclid.org/euclid.em/1047920424">247–270</a>. doi:<a href="https://dx.doi.org/10.1080/10586458.1997.10504613">10.1080/10586458.1997.10504613</a><br />
+<li><p><span class="self-author">G. Pfeiffer</span><br />
+<a class="publication-title" href="https://doi.org/10.1080/10586458.1997.10504613"><span>The Subgroups of <span class="math inline">\(M_{24}\)</span> or How to Compute the Table of Marks of a Finite Group</span>.</a><br />
+<em>Experiment. Math.</em> <strong>6</strong> (1997), no. 3, <a href="http://projecteuclid.org/euclid.em/1047920424">247–270</a>. doi:<a href="http://dx.doi.org/10.1080/10586458.1997.10504613">10.1080/10586458.1997.10504613</a><br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1481593">1481593</a> (98h:20032). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=0895.20017">0895.20017</a>.</p></li>
-<li><p><span>Character Values of Iwahori–Hecke Algebras of Type <span class="math inline">\(B\)</span></span>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span><br />
+<span>Character Values of Iwahori–Hecke Algebras of Type <span class="math inline">\(B\)</span></span>.<br />
 In: Marc Cabanes (Ed.) <span><em>Finite Reductive Groups, Related Structures and Representations (<span>L</span>uminy, 1994)</em></span>, Progr. Math. <span><strong>141</strong></span>, Birkhäuser, Boston 1997, pp. 333–360.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1429879">1429879</a> (98a:20008). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=0876.20011">0876.20011</a>.</p></li>
-<li><p>(with Meinolf Geck, Gerhard Hiß, Frank Lübeck,and Gunter Malle)<br />
-<span>CHEVIE - A System for Computing and Processing Generic Character Tables</span>.<br />
-<em>Appl. Algebra Engrg. Comm. Comput.</em> <strong>7</strong> (1996), no. 3, 175–210. doi:<a href="https://dx.doi.org/10.1007/s002000050027">10.1007/s002000050027</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Meinolf Geck, Gerhard Hiß, Frank Lübeck,and Gunter Malle)<br />
+<a class="publication-title" href="https://doi.org/10.1007/s002000050027"><span>CHEVIE - A System for Computing and Processing Generic Character Tables</span>.</a><br />
+<em>Appl. Algebra Engrg. Comm. Comput.</em> <strong>7</strong> (1996), no. 3, 175–210. doi:<a href="http://dx.doi.org/10.1007/s002000050027">10.1007/s002000050027</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1486215">1486215</a> (99m:20017). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=0847.20006">0847.20006</a>.</p></li>
-<li><p><span>Young characters on <span>C</span>oxeter basis elements of <span>I</span>wahori–<span>H</span>ecke algebras and a <span>M</span>urnaghan–<span>N</span>akayama formula</span>.<br />
-<em>J. Algebra</em> <span><strong>168</strong></span> (1994), no. 2, 525–535. doi:<a href="https://dx.doi.org/10.1006/jabr.1994.1243">10.1006/jabr.1994.1243</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span><br />
+<a class="publication-title" href="https://doi.org/10.1006/jabr.1994.1243"><span>Young characters on <span>C</span>oxeter basis elements of <span>I</span>wahori–<span>H</span>ecke algebras and a <span>M</span>urnaghan–<span>N</span>akayama formula</span>.</a><br />
+<em>J. Algebra</em> <span><strong>168</strong></span> (1994), no. 2, 525–535. doi:<a href="http://dx.doi.org/10.1006/jabr.1994.1243">10.1006/jabr.1994.1243</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1292779">1292779</a> (95g:20012). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=0834.20013">0834.20013</a>.</p></li>
-<li><p><span>Character tables of <span>W</span>eyl groups in <span>GAP</span></span>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span><br />
+<span>Character tables of <span>W</span>eyl groups in <span>GAP</span></span>.<br />
 <em>Bayreuth. Math. Schr.</em> <span><strong>47</strong></span> (1994), 165–222.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1285208">1285208</a> (95d:20027). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=0830.20023">0830.20023</a>.</p></li>
-<li><p>(with Meinolf Geck)<br />
-<span>On the irreducible characters of <span>H</span>ecke algebras</span>.<br />
-<em>Adv. Math.</em> <span><strong>102</strong></span> (1993), no. 1, 79–94. doi:<a href="https://dx.doi.org/10.1006/aima.1993.1056">10.1006/aima.1993.1056</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Meinolf Geck)<br />
+<a class="publication-title" href="https://doi.org/10.1006/aima.1993.1056"><span>On the irreducible characters of <span>H</span>ecke algebras</span>.</a><br />
+<em>Adv. Math.</em> <span><strong>102</strong></span> (1993), no. 1, 79–94. doi:<a href="http://dx.doi.org/10.1006/aima.1993.1056">10.1006/aima.1993.1056</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1250466">1250466</a> (94m:20018). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=0816.20034">0816.20034</a>.</p></li>
-<li><p>(with Meinolf Geck)<br />
-<span>Unipotent characters of the Chevalley groups <span class="math inline">\({D}_4(q)\)</span>, <span class="math inline">\(q\)</span> odd</span>.<br />
-<em>Manuscripta Math.</em> <span><strong>76</strong></span> (1992), no. 3-4, 281–304. doi:<a href="https://dx.doi.org/10.1007/BF02567762">10.1007/BF02567762</a>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Meinolf Geck)<br />
+<a class="publication-title" href="https://doi.org/10.1007/BF02567762"><span>Unipotent characters of the Chevalley groups <span class="math inline">\({D}_4(q)\)</span>, <span class="math inline">\(q\)</span> odd</span>.</a><br />
+<em>Manuscripta Math.</em> <span><strong>76</strong></span> (1992), no. 3-4, 281–304. doi:<a href="http://dx.doi.org/10.1007/BF02567762">10.1007/BF02567762</a>.<br />
 MR <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=1185021">1185021</a> (93j:20035). Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=0813.20016">0813.20016</a>.</p></li>
 </ol>
 <p><span><strong>Theses.</strong></span></p>
 <ol>
-<li><p><span><em>Charakterwerte von Iwahori–Hecke-Algebren von klassischem Typ</em></span>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span><br />
+<span><em>Charakterwerte von Iwahori–Hecke-Algebren von klassischem Typ</em></span>.<br />
 Dissertation, RWTH Aachen 1994.<br />
 Aachener Beiträge zur Mathematik <span><strong>14</strong></span>, Verlag der Augustinus Buchhandlung, Aachen 1995, 64 pages. ISBN: 3-86073-423-7.<br />
 Zbl <a href="http://www.zentralblatt-math.org/zmath/search/?an=0834.20014">0834.20014</a>.</p></li>
-<li><p><span><em>Von Permutationscharakteren und Markentafeln</em></span>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span><br />
+<span><em>Von Permutationscharakteren und Markentafeln</em></span>.<br />
 Diplomarbeit, RWTH Aachen 1991.<br />
 (<a href="http://schmidt.nuigalway.ie/~goetz/pub/dpl.html" class="uri">http://schmidt.nuigalway.ie/~goetz/pub/dpl.html</a>)</p></li>
 </ol>
 <p><span><strong>Preprints.</strong></span></p>
 <ol>
-<li><p>(with Eirini Chavli)<br />
-<span>The BMM Symmetrising Trace Conjecture for Families of Complex Reflection Groups of Rank Two</span>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span> (with Eirini Chavli)<br />
+<a class="publication-title" href="https://arxiv.org/abs/2503.05259"><span>The BMM Symmetrising Trace Conjecture for Families of Complex Reflection Groups of Rank Two</span>.</a><br />
 21 pages. arXiv:<a href="http://arxiv.org/abs/2503.05259">2503.05259</a>.</p></li>
-<li><p><span>Quiver Presentations for Descent Algebras of Exceptional Type</span>.<br />
+<li><p><span class="self-author">G. Pfeiffer</span><br />
+<a class="publication-title" href="https://arxiv.org/abs/0810.2743"><span>Quiver Presentations for Descent Algebras of Exceptional Type</span>.</a><br />
 25 pages. arXiv:<a href="http://arxiv.org/abs/0810.2743">0810.2743</a>.</p></li>
 </ol>
 
   </main>
   <footer>© Götz Pfeiffer</footer>
 </div>
+<script>
+  (() => {
+    const input = document.getElementById("publication-query");
+    const status = document.getElementById("search-status");
+    const lists = Array.from(document.querySelectorAll("main > ol"));
+    const entries = lists.flatMap(list =>
+      Array.from(list.querySelectorAll(":scope > li")).map(item => ({ item, list }))
+    );
+    const total = entries.length;
+
+    function filterPublications() {
+      const query = input.value.trim().toLocaleLowerCase();
+      let visible = 0;
+
+      for (const { item, list } of entries) {
+        const matches = item.textContent.toLocaleLowerCase().includes(query);
+        item.hidden = !matches;
+        if (matches) visible++;
+      }
+
+      for (const list of lists) {
+        const hasVisible = Array.from(list.children).some(item => !item.hidden);
+        list.hidden = !hasVisible;
+        const heading = list.previousElementSibling;
+        if (heading && heading.matches("p")) heading.hidden = !hasVisible;
+      }
+
+      status.textContent = query
+        ? `${visible} of ${total} publications`
+        : `${total} publications`;
+    }
+
+    input.addEventListener("input", filterPublications);
+    filterPublications();
+  })();
+</script>
 </body>
 </html>
